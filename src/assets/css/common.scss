@@ -1,0 +1,97 @@
+@import './normalize';
+
+/** css reset */
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a,
+a:hover {
+	color: #333;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin: 0;
+}
+
+h3,
+h4,
+h5 {
+	font-weight: normal;
+}
+
+select {
+	outline: none;
+}
+
+button,
+input {
+	background: none;
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	&:disabled {
+		&,
+		&:hover {
+			opacity: 0.8 !important;
+			cursor: not-allowed !important;
+		}
+	}
+}
+
+table {
+	border-collapse: collapse;
+	border: none;
+}
+
+/** 自定义滚动条 */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: rgb(166, 168, 177);
+}
+
+/** 常用类 */
+.hide {
+	display: none !important;
+}
+.pr {
+	position: relative;
+}
+/** 字体图标 */
+.eos-icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}
